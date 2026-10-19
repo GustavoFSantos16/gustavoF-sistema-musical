@@ -1,0 +1,91 @@
+:root {
+    --primary: #2c3e50;
+    --blue: #3498db;
+    --blue-dark: #2980b9;
+    --green: #27ae60;
+    --red: #e74c3c;
+    --red-dark: #c0392b;
+    --bg: #f0f2f5;
+    --surface: #ffffff;
+    --border: #dde1e7;
+    --text: #2c3e50;
+    --text-muted: #6c757d;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, .10);
+    --radius: 8px;
+    --font: 'Segoe UI', sistem-ui, apple-system, sans-serif;
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+form {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rex;
+}
+
+.form-grup {
+    margin-bottom: 1.25rem;
+
+}
+
+label {
+    display: block;
+    margin-bottom: .4rem;
+    font-weight: 600;
+    color: var(--primary)
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select{
+    width: 100%;
+    padding: .65rem, .85re;
+    border: 1.5px solid var(var(--border));
+    border-radius: 6px;
+    font-size: .95rem;
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--surface);
+    transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: nome;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219,.15);
+
+}
+
+
+.btn-primary, .btn-edit, .btn-delete, .btn-music, .btn-back, .btn-youtube{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35rex;
+    padding: .55rem 1.1rem;
+    border: nome;
+    border-radius: 6px;
+}
